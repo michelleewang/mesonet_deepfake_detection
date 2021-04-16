@@ -89,7 +89,6 @@ def plotter(images, preds):
     for i,j in enumerate(subset):
         fig.add_subplot(3,4,i+1)
         plt.imshow(np.squeeze(images[j]))
-        print(preds[j])
         plt.xlabel("Model confidence: ", preds[j])
         plt.tight_layout()
         ax = plt.gca()
